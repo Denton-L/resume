@@ -1,11 +1,12 @@
+sudo: required
+dist: trusty
 before_install:
-    - sudo add-apt-repository ppa:texlive-backports/ppa -y
+    - sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ xenial main"
+    - sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ xenial universe"
     - sudo apt-get update
-    - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+    - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra
     - mkdir -p ~/texmf/tex/latex/
-    - wget https://launchpad.net/moderncv/trunk/1.5.1/+download/moderncv-1.5.1.zip
-    - unzip moderncv-1.5.1.zip
-    - mv moderncv/ ~/texmf/tex/latex/
+    - git clone https://github.com/xdanaux/moderncv.git ~/texmf/tex/latex/moderncv/
     - mktexlsr
 
 script:
