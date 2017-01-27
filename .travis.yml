@@ -15,7 +15,7 @@ script:
 env:
     global:
         - GIT_NAME="Denton Liu"
-        - GIT_EMAIL="liu.denton+github@gmail.com"
+        - GIT_EMAIL="liu.denton@gmail.com"
         - GIT_URL="git@github.com:Denton-L/resume.git"
         - ENCRYPTION_LABEL="3b28f2cf6bf8"
         - KEY_LOCATION=".travis/deploy_key"
