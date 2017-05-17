@@ -10,7 +10,7 @@ before_install:
     - mktexlsr
 
 script:
-    - pdflatex -halt-on-error *.tex
+    - for f in *.tex; do pdflatex -halt-on-error "$f"; done
 
 env:
     global:
