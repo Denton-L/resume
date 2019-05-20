@@ -11,7 +11,6 @@
 \def\cpp{C\texttt{++}}
 
 \name{Denton}{Liu}
-\title{Software Engineer}
 \email{denton.liu@edu.uwaterloo.ca}
 \homepage{dentonliu.com}
 \social[linkedin]{DentonL}
@@ -23,22 +22,22 @@
 
 \section{Technical Skills}
 \cvlistitem{Proficient in C, \cpp{}, Python, Go, Bash, Java and various assembly languages (x86, 6502, ARM, PIC, AVR).}
-\cvlistitem{Experienced with using Git, CMake, GDB and Valgrind.}
+\cvlistitem{Experienced with using Git, Docker, CMake, GDB and Valgrind.}
+\cvlistitem{Knowledgeable in FPGA development using Verilog including bringing up a RISC-V core.}
 \cvlistitem{Well-versed in cryptocurrency blockchain technology with an emphasis on Ethereum development.}
 \cvlistitem{Longtime Arch Linux user with abundant experience using the command line.}
-%\cvlistitem{Extensive knowledge of Git, including its internals.}
 
+\vspace{-0.5\baselineskip}
 \section{Experience}
 \cventry{Jan -- April 2019}{Blockchain and Networking Software Engineering Intern}{Marconi Protocol}{San Francisco, California}{}{}
-\cvlistitem{Identified and patched a security vulnerability that resulted in overpayment in custom fork of open-ethereum-pool.}
-\cvlistitem{Modified fork of go-ethereum to implement custom work-fetching protocol, fixing the above security issue.}
-\cvlistitem{Decreased build times of Docker image from 20 to 4 seconds by parallelising and caching each component build.}
+\cvlistitem{Identified and patched a security vulnerability that resulted in overpayment in servers running open-ethereum-pool.}
+\cvlistitem{Patched fork of go-ethereum to implement custom work-fetching protocol, fixing the above security issue.}
+\cvlistitem{Decreased build time of Docker image from 20 to 4 seconds by parallelising and caching each component build.}
 \cvlistitem{Debugged and fixed deep race condition that caused clients to disconnect because of duplicate work being sent.}
 \cvlistitem{Integrated C libraries with React Native in Android by creating a Java bridge using the Java Native Interface.}
 
 \cventry{Apr -- Aug 2018}{Embedded Systems Engineering Intern}{Bose Corporation}{Framingham, Massachusetts}{}{}
 \cvlistitem{Programmed I\textsuperscript{2}C support in new products allowing slave chips to be reflashed from master processor.}
-%\cvlistitem{Refactored internal product debugging tool written in Python to add Bluetooth Low Energy support.}
 \cvlistitem{Integrated Python debugging tool into the \cpp{} manufacturers' test library.}
 \cvlistitem{Improved codebase quality by integrating linters and warning checks into the continuous integration system.}
 
@@ -48,9 +47,6 @@
 
 \cventry{Sept -- Dec 2017}{Embedded Security Developer}{ESCRYPT - Embedded Security}{Waterloo, Ontario}{}{}
 \cvlistitem{Reverse-engineered messages on car's CAN bus to create demo that could lock and unlock doors.}
-%\cvlistitem{Fixed race conditions and memory leaks in embedded \cpp{} codebase, removing all warnings in the build system.}
-%\cvlistitem{Refactored classes in the cryptography layer in order to increase maintainability and improve test coverage.}
-%\cvlistitem{Worked with DevOps by implementing a web page to graph program performance for build monitor.}
 \cvlistitem{Improved code quality by aggressively enabling warnings in build system and fixing the result.}
 
 \cventry{Jan -- Apr 2017}{Engineering Intern}{Cask Data}{Palo Alto, California}{}{}
@@ -59,16 +55,16 @@
 \cvlistitem{Assisted with system administration and project releases by creating useful and maintainable shell scripts.}
 
 \cventry{May -- Aug 2016}{Blockchain Engineering}{Ledger Labs}{Toronto, Ontario}{}{}
-%\cvlistitem{Built a general-purpose implementation of state channels using Solidity smart-contracts and JS.}
 \cvlistitem{Committed many successful pull requests to the Solidity compiler in \cpp{}.}
 \cvlistitem{Contributed to open-source Ethereum projects in JS including browser-solidity, solc-js and testrpc.}
 
+\vspace{-0.5\baselineskip}
 \section{Projects}
 \cvitem{Git Contributions}{
 	\begin{itemize}
 		\item Contributed to Git by fixing reported bugs, reviewing patches and writing new features in C and shell script.
-		\item Improved \texttt{git rebase} command by implementing \texttt{-{}-keep-base} and adding more fast-forward cases.
-		\item Caught and fixed bug across multiple commands that caused commit messages to be rendered incorrectly.
+		\item Improved the \texttt{git rebase} command by implementing \texttt{-{}-keep-base} and adding more fast-forward cases.
+		\item Caught and fixed a bug across multiple commands that caused commit messages to be rendered incorrectly.
 	\end{itemize}
 }
 \vspace{-\baselineskip}
@@ -84,15 +80,15 @@
 	\begin{itemize}
 		\item Developed a reliable algorithm-trading application using Python 3 with 8.8\% average monthly return.
 		\item Implemented a market making algorithm, taking advantage of the volatile cryptocurrency market.
-		%\item Emulated and reimplemented Poloniex exchange API endpoints locally to accurately backtest algorithm.
-		%\item Secured and administrated Raspberry Pi server running trading application.
+		\item Emulated and reimplemented Poloniex exchange API endpoints locally to accurately backtest algorithm.
 	\end{itemize}
 }
-\vspace{-\baselineskip}
 
+\vspace{-1.5\baselineskip}
 \section{Education}
 \cventry{2015 -- 2020}{Candidate for Bachelors of Software Engineering}{University of Waterloo}{Waterloo, Ontario}{}{}
 
+\vspace{-0.5\baselineskip}
 \section{Interests and Hobbies}
 \cvlistitem{Avid unicyclist.}
 \cvlistitem{Devoted Vim user.}
