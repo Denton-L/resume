@@ -4,14 +4,15 @@
 
 \moderncvstyle{classic}
 \moderncvcolor{orange}
-\moderncvicons{awesome}
+\moderncvicons{marvosym}
 
 \setlength{\hintscolumnwidth}{1in}
 
 \def\cpp{C\texttt{++}}
 
 \name{Denton}{Liu}
-\email{denton.liu@edu.uwaterloo.ca}
+\title{Software Developer}
+\email{liu.denton@gmail.com}
 \homepage{dentonliu.com}
 \social[linkedin]{DentonL}
 \social[github]{Denton-L}
@@ -22,52 +23,49 @@
 
 \section{Technical Skills}
 \cvlistitem{Proficient in C, \cpp{}, Python, Go, Bash, Java and various assembly languages (x86, 6502, ARM, PIC, AVR).}
-\cvlistitem{Experienced with using Git, Docker, CMake, GDB and Valgrind.}
+\cvlistitem{Experienced with using Git, Docker, CMake, GDB, Valgrind and Coccinelle.}
+\cvlistitem{Well-versed in dev-ops and infrastructure development using Jenkins, Travis and Puppet.}
 \cvlistitem{Knowledgeable in FPGA development using Verilog including bringing up a RISC-V core.}
-\cvlistitem{Well-versed in cryptocurrency blockchain technology with an emphasis on Ethereum development.}
 \cvlistitem{Longtime Arch Linux user with abundant experience using the command line.}
 
 \vspace{-0.5\baselineskip}
 \section{Experience}
-\cventry{Jan -- Apr 2019}{Blockchain and Networking Software Engineering Intern}{Marconi Protocol}{San Francisco, California}{}{}
-\cvlistitem{Identified and patched a security vulnerability that resulted in overpayment in servers running open-ethereum-pool.}
-\cvlistitem{Patched fork of go-ethereum to implement custom work-fetching protocol, fixing the above security issue.}
-\cvlistitem{Decreased build time of Docker image from 20 to 4 seconds by parallelising and caching each component build.}
-\cvlistitem{Debugged and fixed deep race condition that caused clients to disconnect because of duplicate work being sent.}
-\cvlistitem{Integrated C libraries with React Native in Android by creating a Java bridge using the Java Native Interface.}
+\cventry{Sep 2018 -- Now}{Git Project}{Contributor}{}{}{}
+\cvlistitem{Contributed over 70 accepted patches to the Git project in C and POSIX shell script.}
+\cvlistitem{Improved the user experience of Git by adding requested features, such as \texttt{git rebase -{}-keep-base}.}
+\cvlistitem{Enhanced code quality by increasing the coverage of static analysis in continuous integration pipeline with Coccinelle.}
+\cvlistitem{Caught and fixed a bug across multiple commands that caused commit messages to be rendered incorrectly.}
 
-\cventry{Apr -- Aug 2018}{Embedded Systems Engineering Intern}{Bose Corporation}{Framingham, Massachusetts}{}{}
+\cventry{Sep 2019 -- Now}{Salesforce.com, Inc.}{Software Engineering Intern}{San Francisco, California}{}{}
+\cvlistitem{Introduced a build and deployment pipeline using Docker for an internal distributed monitoring system.}
+
+\cventry{Jan -- Apr 2019}{Marconi Protocol}{Blockchain and Networking Software Engineering Intern}{San Francisco, California}{}{}
+\cvlistitem{Identified and patched a security vulnerability that resulted in overpayment on servers running open-ethereum-pool.}
+\cvlistitem{Decreased build time of Docker image from 20 to 4 seconds by parallelising and caching each component build.}
+\cvlistitem{Debugged and fixed a complex race condition that caused clients to disconnect because of duplicate work being sent.}
+
+\cventry{Apr -- Aug 2018}{Bose Corporation}{Embedded Systems Engineering Intern}{Framingham, Massachusetts}{}{}
 \cvlistitem{Programmed I\textsuperscript{2}C support in new products allowing slave chips to be reflashed from master processor.}
 \cvlistitem{Integrated Python debugging tool into the \cpp{} manufacturers' test library.}
 \cvlistitem{Improved codebase quality by integrating linters and warning checks into the continuous integration system.}
 
-\cventry{Jan -- Apr 2018}{Undergraduate Research Assistant}{University of Waterloo}{Waterloo, Ontario}{}{}
-\cvlistitem{Implemented Karatsuba multiplication and Barrett reduction cryptography primitives using 8-bit AVR assembly.}
-\cvlistitem{Removed timing attacks from the implemented cryptographic primitives while also decreasing number of instructions.}
+\cventry{Jan -- Apr 2018}{University of Waterloo}{Undergraduate Research Assistant}{Waterloo, Ontario}{}{}
+\cvlistitem{Implemented timing attack-resistant, efficient multiplication and reduction cryptography primitives in AVR assembly.}
 
-\cventry{Sept -- Dec 2017}{Embedded Security Developer}{ESCRYPT - Embedded Security}{Waterloo, Ontario}{}{}
+\cventry{Sep -- Dec 2017}{ESCRYPT - Embedded Security}{Embedded Security Developer Intern}{Waterloo, Ontario}{}{}
 \cvlistitem{Reverse-engineered messages on car's CAN bus to create demo that could lock and unlock doors.}
-\cvlistitem{Improved code quality by aggressively enabling warnings in build system and fixing the result.}
+\cvlistitem{Improved code quality by aggressively enabling warnings in build system and fixing lingering warnings.}
 
-\cventry{Jan -- Apr 2017}{Engineering Intern}{Cask Data}{Palo Alto, California}{}{}
+\cventry{Jan -- Apr 2017}{Cask Data}{Engineering Intern}{Palo Alto, California}{}{}
 \cvlistitem{Designed and implemented optimiser to remove unnecessary operations by building and analysing graphs.}
 \cvlistitem{Reduced memory usage of searches by 50\% which stopped YARN containers from running out of memory.}
-\cvlistitem{Assisted with system administration and project releases by creating useful and maintainable shell scripts.}
 
-\cventry{May -- Aug 2016}{Blockchain Engineering}{Ledger Labs}{Toronto, Ontario}{}{}
+\cventry{May -- Aug 2016}{Ledger Labs}{Blockchain Engineering Intern}{Toronto, Ontario}{}{}
 \cvlistitem{Committed many successful pull requests to the Solidity compiler in \cpp{}.}
 \cvlistitem{Contributed to open-source Ethereum projects in JS including browser-solidity, solc-js and testrpc.}
 
 \vspace{-0.5\baselineskip}
 \section{Projects}
-\cvitem{Git Contributions}{
-	\begin{itemize}
-		\item Contributed to Git by fixing reported bugs, reviewing patches and writing new features in C and shell script.
-		\item Improved the \texttt{git rebase} command by implementing \texttt{-{}-keep-base} and adding more fast-forward cases.
-		\item Caught and fixed a bug across multiple commands that caused commit messages to be rendered incorrectly.
-	\end{itemize}
-}
-\vspace{-\baselineskip}
 \cvitem{Based Connect}{
 	\begin{itemize}
 		\item Reverse-engineered Bluetooth protocol between official Bose Connect app and headphones using Wireshark.
@@ -86,12 +84,11 @@
 
 \vspace{-1.5\baselineskip}
 \section{Education}
-\cventry{2015 -- 2020}{Candidate for Bachelors of Software Engineering}{University of Waterloo}{Waterloo, Ontario}{}{}
+\cventry{2015 -- 2020}{University of Waterloo}{Candidate for Bachelors of Software Engineering}{Waterloo, Ontario}{}{}
 
 \vspace{-0.5\baselineskip}
 \section{Interests and Hobbies}
 \cvlistitem{Avid unicyclist.}
 \cvlistitem{Devoted Vim user.}
-\cvlistitem{Enthusiastic user of \LaTeX.}
 
 \end{document}
